@@ -1,0 +1,125 @@
+/* DEFININDO AS CORES E TIPOGRAFIA DO SITE */
+:root {
+    --cor-fundo: #FAFAF5;      /* Off-white */
+    --cor-texto: #2B2B2B;      /* Preto suave */
+    --cor-estrutura: #2C3E50;  /* Azul Navy (Header/Footer) */
+    --cor-acao: #CC5500;       /* Laranja (Botões/Links) */
+    --cor-feedback: #B22222;   /* Vermelho (Erros) */
+
+    --fonte-titulo: 'Merriweather', serif;
+    --fonte-corpo: 'Open Sans', sans-serif;
+}
+
+/* REDEFININDO A FORMATAÇÃO PADRÃO DO SITE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-corpo);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* DEFININDO A FORMATAÇÃO DO HEADER */
+header {
+    background-color: var(--cor-estrutura); /* Azul Navy */
+    padding: 15px 0;
+    color: var(--cor-fundo); /* Texto branco no fundo escuro */
+}
+
+.logoLink img {
+    height: 68px;
+    width: auto;
+}
+
+/* Container com a "linha de cima do header" (logo, barra de busca e perfil) */
+.containerTopo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* CONFIGURAÇÕES DA BARRA DE BUSCA */
+.barraBusca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Configuração do input */
+.barraBusca input {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: var(--cor-texto);
+}
+
+/* Configurações do submit */
+.barraBusca button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+/* Ajuste o tamanho da lupa */
+.barraBusca button img {
+    width: 24px;
+    height: auto;
+}
+
+/* ÁREA DO USUÁRIO (LINK) */
+.areaUsuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Configuração para a cor mudar ao passar do mouse */
+.areaUsuario:hover {
+    color: var(--cor-acao);
+}
+
+/* --- NAVBAR (MENU DE BAIXO) --- */
+nav {
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-fundo);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: var(--cor-acao);
+    transition: 0.3s;
+}
