@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Atendimento - Taberna do Mafra</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerTopo">
+            <a href="index.html" class="logoLink">
+                <img src="img/logo.png" alt="Taberna do Mafra - Voltar para o início"/>
+            </a>
+
+            <form class="barraBusca">
+                <input type="search" placeholder="Digite alguma coisa..." aria-label="Buscar produtos" />
+                <button type="submit">
+                    <img src="./img/icons/lupa.png" alt="Buscar" />
+                </button>
+            </form>
+
+            <a href="login.html" class="areaUsuario">
+                <span class="textoLogin">
+                    Faça login ou <br/> cadastre-se
+                </span>
+                <img src="./img/icons/perfil.png" alt="Minha conta"/>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="atendimento.html">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="containerAtendimento">
+            
+            <div class="areaFormulario">
+                <h2>Fale Conosco</h2>
+                <p>Tem alguma dúvida sobre um produto ou seu pedido? Preencha o formulário abaixo e responderemos o mais rápido possível.</p>
+
+                <form class="formContato">
+                    <div class="campoForm">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+                    </div>
+
+                    <div class="campoForm">
+                        <label for="email">E-mail para retorno:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </div>
+
+                    <div class="campoForm">
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua dúvida ou solicitação..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="botaoEnviar">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+
+            <div class="areaInfoContato">
+                <h3>Outros Canais</h3>
+                
+                <div class="itemContato">
+                    <strong>E-mail direto</strong>
+                    <p>suporte@tabernadomafra.com.br</p>
+                </div>
+
+                <div class="itemContato">
+                    <strong>Telefone / WhatsApp</strong>
+                    <p>(19) 99999-9999</p>
+                </div>
+
+                <div class="itemContato">
+                    <strong>Horário de Atendimento</strong>
+                    <p>Segunda a Sexta: 09h às 18h</p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="beneficiosFooter">
+            <div class="itemBeneficio">
+                <img src="./img/icons/caminhao.png" alt="Ícone de caminhão" />
+                <div class="textoBeneficio">
+                    <strong>FRETE GRÁTIS</strong>
+                    <span>em produtos selecionados</span>
+                </div>
+            </div>
+
+            <div class="itemBeneficio">
+                <img src="./img/icons/cartao.png" alt="Ícone de cartão" />
+                <div class="textoBeneficio">
+                    <strong>EM ATÉ 12x SEM JUROS</strong>
+                    <span>no cartão de crédito</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divisorFooter" />
+
+        <div class="conteudoFooter">
+            <div class="colunaFooter">
+                <h3>Links de fácil acesso</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo de produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </div>
+
+            <div class="colunaFooter">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </div>
+
+            <div class="colunaFooter">
+                <h3>Informações legais</h3>
+                <address>
+                    CNPJ: 12.345.678/0001-99 <br>
+                    Endereço: Rua do Limoeiro, 123 <br>
+                    Campinas - SP
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Taberna do Mafra — Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

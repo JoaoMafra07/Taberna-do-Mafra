@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Detalhes do Produto - Taberna do Mafra</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerTopo">
+            <a href="index.html" class="logoLink">
+                <img src="img/logo.png" alt="Taberna do Mafra - Voltar para o início"/>
+            </a>
+
+            <form class="barraBusca">
+                <input type="search" placeholder="Digite alguma coisa..." aria-label="Buscar produtos" />
+                <button type="submit">
+                    <img src="./img/icons/lupa.png" alt="Buscar" />
+                </button>
+            </form>
+
+            <a href="login.html" class="areaUsuario">
+                <span class="textoLogin">
+                    Faça login ou <br/> cadastre-se
+                </span>
+                <img src="./img/icons/perfil.png" alt="Minha conta"/>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="atendimento.html">Atendimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="containerDetalhe">
+            
+            <div class="colunaImagem">
+                <img src="./img/produtos/1 - Dados Ordem.jpg" alt="Kit de dados vermelhos e pretos com a marca de Ordem Paranormal" />
+            </div>
+
+            <div class="infoProduto">
+                <h2>Kit de dados Ordem Paranormal</h2>
+                <p class="codigoProduto">Cód: 001</p>
+
+                <div class="areaPreco">
+                    <span class="precoAntigo">R$ 30,00</span>
+                    <span class="precoAtual">R$ 24,90</span>
+                    <span class="avisoPix">à vista no Pix (10% OFF)</span>
+                </div>
+
+                <p class="descricaoProduto">
+                    Este kit oficial de Ordem Paranormal contém 7 dados essenciais para suas investigações (d4, d6, d8, d10, d12, d20 e d%). 
+                    Feitos em resina de alta qualidade com acabamento marmorizado em vermelho e preto, perfeitos para invocar o medo em seus jogadores.
+                </p>
+
+                <hr class="divisorDetalhe">
+
+                <form class="formCompra">
+                    <div class="seletorQuantidade">
+                        <label for="qtd">Quantidade:</label>
+                        <input type="number" id="qtd" name="qtd" value="1" min="1" max="10">
+                    </div>
+
+                    <button type="button" class="botaoComprar">
+                        ADICIONAR AO CARRINHO
+                    </button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="beneficiosFooter">
+            <div class="itemBeneficio">
+                <img src="./img/icons/caminhao.png" alt="Ícone de caminhão" />
+                <div class="textoBeneficio">
+                    <strong>FRETE GRÁTIS</strong>
+                    <span>em produtos selecionados</span>
+                </div>
+            </div>
+
+            <div class="itemBeneficio">
+                <img src="./img/icons/cartao.png" alt="Ícone de cartão" />
+                <div class="textoBeneficio">
+                    <strong>EM ATÉ 12x SEM JUROS</strong>
+                    <span>no cartão de crédito</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divisorFooter" />
+
+        <div class="conteudoFooter">
+            <div class="colunaFooter">
+                <h3>Links de fácil acesso</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo de produtos</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                </ul>
+            </div>
+
+            <div class="colunaFooter">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="suporte.html">Suporte</a></li>
+                </ul>
+            </div>
+
+            <div class="colunaFooter">
+                <h3>Informações legais</h3>
+                <address>
+                    CNPJ: 12.345.678/0001-99 <br>
+                    Endereço: Rua do Limoeiro, 123 <br>
+                    Campinas - SP
+                </address>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 Taberna do Mafra — Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

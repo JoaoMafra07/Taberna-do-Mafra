@@ -27,7 +27,12 @@ body {
 header {
     background-color: var(--cor-estrutura); /* Azul Navy */
     padding: 15px 0;
-    color: var(--cor-fundo); /* Texto branco no fundo escuro */
+    color: var(--cor-fundo); 
+    
+    /* ADICIONE ESTAS 3 LINHAS ABAIXO: */
+    position: sticky;  /* Torna o elemento "grudento" */
+    top: 0;            /* Cola ele no topo da tela (0px de distância) */
+    z-index: 1000;     /* Garante que ele fique EM CIMA de todos os outros elementos */
 }
 
 .logoLink img {
@@ -122,4 +127,521 @@ nav a {
 nav a:hover {
     color: var(--cor-acao);
     transition: 0.3s;
+}
+
+/* --- BANNER --- */
+.bannerDestaque {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px 0 100px;
+    
+    background-image: url('./img/Banner Ordem.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--cor-feedback); /* Cor de fundo de segurança */
+    
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.conteudoTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+}
+
+.conteudoTexto h2 {
+    font-family: var(--fonte-titulo);
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.conteudoTexto p {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.textoDesconto {
+    font-family: var(--fonte-titulo);
+    color: #FFD700;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.vitrineProdutos {
+    max-width: 1200px;
+    margin: 60px auto;
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.vitrineProdutos h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 28px;
+    color: var(--cor-texto);
+    margin-bottom: 30px;
+}
+
+.gradeProdutos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardProduto {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardProduto img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.cardProduto h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-texto);
+    line-height: 1.4;
+    min-height: 45px;
+}
+
+.precoAntigo {
+    font-size: 14px;
+    color: #7a7a7a;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+.precoAtual {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.avisoPix {
+    font-size: 14px;
+    color: var(--cor-feedback);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--cor-estrutura); /* Azul Navy */
+    color: #FFFFFF;
+    padding-top: 40px;
+    margin-top: 60px;
+}
+
+/* Parte 1: Benefícios */
+.beneficiosFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 30px;
+}
+
+.itemBeneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.itemBeneficio img {
+    width: 40px;
+    height: auto;
+}
+
+.textoBeneficio {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.textoBeneficio strong {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Linha divisória fina */
+.divisorFooter {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+}
+
+.conteudoFooter {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.colunaFooter h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.colunaFooter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.colunaFooter ul li {
+    margin-bottom: 10px;
+}
+
+.colunaFooter a {
+    text-decoration: none;
+    color: #dcdcdc;
+    transition: 0.3s;
+}
+
+.colunaFooter a:hover {
+    color: var(--cor-acao);
+}
+
+.colunaFooter address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+/* --- ÁREA DOS PRODUTOS --- */
+.areaProdutos {
+    flex-grow: 1;
+}
+
+.areaProdutos .gradeProdutos {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+a.cardProduto {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+}
+
+a.cardProduto:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* --- PÁGINA DE DETALHES DO PRODUTO --- */
+.containerDetalhe {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    gap: 60px;
+}
+
+/* Coluna da Imagem */
+.colunaImagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.colunaImagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+/* Coluna das Informações */
+.infoProduto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoProduto h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--cor-texto);
+}
+
+.codigoProduto {
+    font-size: 14px;
+    color: #888;
+    margin-top: -15px;
+}
+
+.areaPreco {
+    display: flex;
+    flex-direction: column;
+}
+
+.areaPreco .precoAntigo {
+    font-size: 16px;
+}
+
+.areaPreco .precoAtual {
+    font-size: 36px;
+    color: var(--cor-acao); /* Laranja */
+}
+
+.descricaoProduto {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.divisorDetalhe {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+/* Formulário de Compra */
+.formCompra {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seletorQuantidade {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.seletorQuantidade input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.botaoComprar {
+    background-color: var(--cor-acao); /* Laranja */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-grow: 1;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.botaoComprar:hover {
+    background-color: #a34400;
+    transform: scale(1.02);
+}
+
+/* --- PÁGINA SOBRE NÓS --- */
+.containerSobre {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.textoSobre {
+    flex: 2;
+}
+
+.textoSobre h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 36px;
+    color: var(--cor-acao); /* Laranja */
+    margin-bottom: 20px;
+}
+
+.textoSobre h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    color: var(--cor-estrutura); /* Azul Navy */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.textoSobre p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+.imagemSobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagemSobre img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* --- PÁGINA DE ATENDIMENTO --- */
+.containerAtendimento {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0; 
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    overflow: hidden;
+}
+
+.areaFormulario {
+    flex: 2;
+    padding: 50px;
+}
+
+.areaFormulario h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+.areaFormulario p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.formContato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campoForm label {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+.campoForm input,
+.campoForm textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: var(--fonte-corpo);
+    font-size: 16px;
+    background-color: #FAFAF5;
+}
+
+.campoForm textarea {
+    resize: none;
+}
+
+.botaoEnviar {
+    background-color: var(--cor-acao);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.botaoEnviar:hover {
+    background-color: #a34400;
+    transform: scale(1.02);
+}
+
+.areaInfoContato {
+    flex: 1;
+    background-color: var(--cor-estrutura);
+    color: white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.areaInfoContato h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.itemContato strong {
+    display: block;
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.itemContato p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.areaInfoContato hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
 }
