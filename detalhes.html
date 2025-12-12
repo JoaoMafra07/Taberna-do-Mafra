@@ -1,3 +1,29 @@
+<!-- 
+Página de Detalhes do Produto. 
+
+FUNÇÃO: Exibir informações sobre um item específico, incluindo descrição longa e opção de compra.
+
+RELAÇÃO COM STYLE.CSS:
+.containerDetalhe: Ele cria um box branco com sombra e usa 'display: flex' para dividir a tela.
+.colunaImagem e .infoProduto: Ambas as divs possuem 'flex: 1', o que 
+garante que ocupem exatamente o mesmo espaço  dentro do container.
+.formCompra: Alinha o input de quantidade e o botão de comprar na horizontal.
+
+ESTRUTURA:
+Cabeçalho
+    Logo
+    Busca
+    Login
+    Nav
+Main
+    Container Detalhe
+        Coluna da Esquerda (Imagem)
+        Coluna da Direita (Título, Preço, Descrição, Botão)
+Rodapé
+    Benefícios
+    Links
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,13 +48,6 @@
                     <img src="./img/icons/lupa.png" alt="Buscar" />
                 </button>
             </form>
-
-            <a href="login.html" class="areaUsuario">
-                <span class="textoLogin">
-                    Faça login ou <br/> cadastre-se
-                </span>
-                <img src="./img/icons/perfil.png" alt="Minha conta"/>
-            </a>
         </div>
 
         <nav>
@@ -68,11 +87,11 @@
                 <form class="formCompra">
                     <div class="seletorQuantidade">
                         <label for="qtd">Quantidade:</label>
-                        <input type="number" id="qtd" name="qtd" value="1" min="1" max="10">
+                        <input type="number" id="qtd" name="qtd" value="1" min="1" max="10" />
                     </div>
 
                     <button type="button" class="botaoComprar">
-                        ADICIONAR AO CARRINHO
+                        COMPRAR
                     </button>
                 </form>
             </div>
@@ -114,15 +133,15 @@
             <div class="colunaFooter">
                 <h3>Atendimento</h3>
                 <ul>
-                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="atendimento.html">Suporte</a></li>
                 </ul>
             </div>
 
             <div class="colunaFooter">
                 <h3>Informações legais</h3>
                 <address>
-                    CNPJ: 12.345.678/0001-99 <br>
-                    Endereço: Rua do Limoeiro, 123 <br>
+                    CNPJ: 12.345.678/0001-99 <br/>
+                    Endereço: Rua do Limoeiro, 123 <br/>
                     Campinas - SP
                 </address>
             </div>

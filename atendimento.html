@@ -1,3 +1,29 @@
+<!--
+Página de Atendimento ao Cliente.
+
+FUNÇÃO: Coletar mensagens dos usuários via formulário e exibir outros canais.
+
+RELAÇÃO COM STYLE.CSS:
+.containerAtendimento: Usa Flexbox para criar uma caixa única dividida.
+.areaFormulario (Esquerda): Ocupa 2 partes (flex: 2) e tem fundo branco.
+.areaInfoContato (Direita): Ocupa 1 parte (flex: 1) e usa a cor 'var(--cor-estrutura)'.
+.campoForm: Define a estrutura vertical para cada campo do formulário.
+
+ESTRUTURA:
+Cabeçalho
+    Logo
+    Busca
+    Login
+    Nav
+Main
+    Container Atendimento
+        Área do Formulário (Inputs + Botão)
+        Área de Informações (Sidebar escura com E-mail/Tel)
+Rodapé
+    Benefícios
+    Links
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,13 +48,6 @@
                     <img src="./img/icons/lupa.png" alt="Buscar" />
                 </button>
             </form>
-
-            <a href="login.html" class="areaUsuario">
-                <span class="textoLogin">
-                    Faça login ou <br/> cadastre-se
-                </span>
-                <img src="./img/icons/perfil.png" alt="Minha conta"/>
-            </a>
         </div>
 
         <nav>
@@ -51,12 +70,12 @@
                 <form class="formContato">
                     <div class="campoForm">
                         <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required />
                     </div>
 
                     <div class="campoForm">
                         <label for="email">E-mail para retorno:</label>
-                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required />
                     </div>
 
                     <div class="campoForm">
@@ -125,15 +144,15 @@
             <div class="colunaFooter">
                 <h3>Atendimento</h3>
                 <ul>
-                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="atendimento.html">Suporte</a></li>
                 </ul>
             </div>
 
             <div class="colunaFooter">
                 <h3>Informações legais</h3>
                 <address>
-                    CNPJ: 12.345.678/0001-99 <br>
-                    Endereço: Rua do Limoeiro, 123 <br>
+                    CNPJ: 12.345.678/0001-99 <br/>
+                    Endereço: Rua do Limoeiro, 123 <br/>
                     Campinas - SP
                 </address>
             </div>

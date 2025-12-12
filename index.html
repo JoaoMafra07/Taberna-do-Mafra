@@ -1,3 +1,28 @@
+<!--
+Página Inicial (Home). 
+
+FUNÇÃO: Apresentar o banner e os produtos em promoção e mais vendidos.
+
+RELAÇÃO COM STYLE.CSS:
+.Header (Sticky): A tag header depende do 'position: sticky' do CSS para fixar no topo.
+.bannerHome: A imagem de fundo deste banner está definida no CSS.
+.gradeProdutos: Usa Flexbox com 'justify-content: space-between'.
+.cardProduto: Definido com largura de 23% no CSS para ficar 4 itens por linha.
+
+ESTRUTURA:
+Cabeçalho 
+    Logo
+    Busca
+    Nav
+Main
+    Seção Banner
+    Seção Vitrine (Promoção)
+    Seção Vitrine (Mais Vendidos)
+Rodapé
+    Benefícios
+    Links
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,7 +38,7 @@
     <header>
         <div class="containerTopo">
             <a href="index.html" class="logoLink">
-                <img src="img\logo.png" alt="Taberna do Mafra - Voltar para o início"/>
+                <img src="img/logo.png" alt="Taberna do Mafra - Voltar para o início"/>
             </a>
 
             <form class="barraBusca">
@@ -23,14 +48,6 @@
                     <img src="./img/icons/lupa.png" alt="Buscar" />
                 </button>
             </form>
-
-            <a href="login.html" class="areaUsuario">
-                <span class="textoLogin">
-                    Faça login ou <br/> cadastre-se
-                </span>
-
-                <img src="./img/icons/perfil.png" alt="Minha conta"/>
-            </a>
         </div>
 
         <nav>
@@ -44,7 +61,7 @@
     </header>
 
     <main>
-        <section class="bannerDestaque" aria-label="Destaque Promocional">
+        <section class="bannerHome" aria-label="Destaque Promocional">
             
             <div class="conteudoTexto">
                 <h2>Produtos de RPG</h2>
@@ -166,15 +183,15 @@
             <div class="colunaFooter">
                 <h3>Atendimento</h3>
                 <ul>
-                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="atendimento.html">Suporte</a></li>
                 </ul>
             </div>
 
             <div class="colunaFooter">
                 <h3>Informações legais</h3>
                 <address>
-                    CNPJ: 12.345.678/0001-99 <br>
-                    Endereço: Rua do Limoeiro, 123 <br>
+                    CNPJ: 12.345.678/0001-99 <br/>
+                    Endereço: Rua do Limoeiro, 123 <br/>
                     Campinas - SP
                 </address>
             </div>

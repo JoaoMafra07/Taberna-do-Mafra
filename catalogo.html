@@ -1,3 +1,27 @@
+<!--
+Página de Catálogo Completo.
+
+FUNÇÃO: Listar todos os produtos da loja em uma grade organizada que permite rolagem.
+
+RELAÇÃO COM STYLE.CSS:
+.gradeProdutos (flex-wrap): A propriedade crucial para os cards 
+irem para a linha de baixo quando não cabem mais na linha atual.
+.cardProduto (width: 23%): Mantém os 4 produtos por linha.
+
+ESTRUTURA:
+Cabeçalho
+    Logo
+    Busca
+    Login
+    Nav
+Main
+    Seção com todos os 20 produtos 
+    (todos os produtos redirecionam ao Dado Vermelho, que se chama "Dados Ordem.jpg")
+Rodapé
+    Benefícios
+    Links
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -22,13 +46,6 @@
                     <img src="./img/icons/lupa.png" alt="Buscar" />
                 </button>
             </form>
-
-            <a href="login.html" class="areaUsuario">
-                <span class="textoLogin">
-                    Faça login ou <br/> cadastre-se
-                </span>
-                <img src="./img/icons/perfil.png" alt="Minha conta"/>
-            </a>
         </div>
 
         <nav>
@@ -245,15 +262,15 @@
             <div class="colunaFooter">
                 <h3>Atendimento</h3>
                 <ul>
-                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="atendimento.html">Suporte</a></li>
                 </ul>
             </div>
 
             <div class="colunaFooter">
                 <h3>Informações legais</h3>
                 <address>
-                    CNPJ: 12.345.678/0001-99 <br>
-                    Endereço: Rua do Limoeiro, 123 <br>
+                    CNPJ: 12.345.678/0001-99 <br/>
+                    Endereço: Rua do Limoeiro, 123 <br/>
                     Campinas - SP
                 </address>
             </div>

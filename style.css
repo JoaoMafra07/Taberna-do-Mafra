@@ -1,4 +1,7 @@
 /* DEFININDO AS CORES E TIPOGRAFIA DO SITE */
+
+/* Criei variáveis para as cores principais, a fim de facilitar
+   reutilização, manutenibilidade e mudanças futuras */
 :root {
     --cor-fundo: #FAFAF5;      /* Off-white */
     --cor-texto: #2B2B2B;      /* Preto suave */
@@ -11,6 +14,9 @@
 }
 
 /* REDEFININDO A FORMATAÇÃO PADRÃO DO SITE */
+
+/* O box-sizing é essencial para que o padding não aumente o tamanho
+   total das caixas e acabe quebrando o layout do site. */
 * {
     margin: 0;
     padding: 0;
@@ -24,15 +30,17 @@ body {
 }
 
 /* DEFININDO A FORMATAÇÃO DO HEADER */
+
+/* O position: sticky faz o menu grudar o header no topo da tela 
+   quando o usuário rola a página para baixo, facilitando a navegação. */
 header {
     background-color: var(--cor-estrutura); /* Azul Navy */
     padding: 15px 0;
     color: var(--cor-fundo); 
     
-    /* ADICIONE ESTAS 3 LINHAS ABAIXO: */
-    position: sticky;  /* Torna o elemento "grudento" */
-    top: 0;            /* Cola ele no topo da tela (0px de distância) */
-    z-index: 1000;     /* Garante que ele fique EM CIMA de todos os outros elementos */
+    position: sticky;
+    top: 0;  
+    z-index: 1000;
 }
 
 .logoLink img {
@@ -40,16 +48,19 @@ header {
     width: auto;
 }
 
-/* Container com a "linha de cima do header" (logo, barra de busca e perfil) */
+/* Container com a "linha de cima do header" (logo e barra de busca) */
 .containerTopo {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 
     display: flex;
-    justify-content: space-between;
+/* Usando flex para colocar a logo e a busca lado a lado
+   e centralizar tudo verticalmente (align-items). O display
+   flex será bastante utilizado em todo o código*/
+    justify-content: flex-start; 
     align-items: center;
-    gap: 40px;
+    gap: 150px;
 }
 
 /* CONFIGURAÇÕES DA BARRA DE BUSCA */
@@ -99,7 +110,8 @@ header {
     font-size: 18px;
 }
 
-/* Configuração para a cor mudar ao passar do mouse */
+/* Usando hover para dar feedback visual ao usuário.
+   O hover foi bastante utilizado em diversas parte do código */
 .areaUsuario:hover {
     color: var(--cor-acao);
 }
@@ -129,8 +141,8 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* --- BANNER --- */
-.bannerDestaque {
+/* --- BANNER DE ORDEM --- */
+.bannerHome {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px 0 100px;
