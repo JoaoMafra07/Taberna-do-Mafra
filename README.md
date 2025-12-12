@@ -27,7 +27,3 @@ A interface foi pensada para ser acessível e temática, utilizando a seguinte p
 ## Como Rodar
 1.  Baixe a pasta do projeto.
 2.  Abra o arquivo `index.html` em qualquer navegador (Chrome, Edge, Firefox).
-
----
-**Autor:** João Roque Lorizolla Mafra  
-**Curso:** Desenvolvimento de Sistemas - SENAI Campinas
